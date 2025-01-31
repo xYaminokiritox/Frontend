@@ -1,5 +1,6 @@
 import React from "react";
 import myImage from "../Asset/img/img1.jpeg";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -12,11 +13,7 @@ function Homepage() {
       <div className="rightcontainer">
         <div className="formcard">
           <div>
-            <h2 style={{ alignSelf: "center" }}>Register</h2>
-          </div>
-          <div>
-            <label>Name</label>
-            <input placeholder="Enter your Name" required type="text" />
+            <h2 style={{ alignSelf: "center" }}>Login</h2>
           </div>
           <div>
             <label>E-mail</label>
@@ -27,15 +24,12 @@ function Homepage() {
             <input placeholder="Enter your Password" required type="password" />
           </div>
           <div>
-            <label>Confirm Password</label>
-            <input
-              placeholder="Confirm your Password"
-              required
-              type="password"
-            />
+            <button>Login</button>
           </div>
           <div>
-            <button>Submit</button>
+            <span style={{ alignSelf: "center" }}>
+              Not a user? <Link to="/register">Register</Link>
+            </span>
           </div>
         </div>
       </div>
