@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.maincontainer{
+  background-image: linear-gradient(lightgray, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}

@@ -1,8 +1,15 @@
 import React from "react";
 import myImage from "../Asset/img/img1.jpeg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Homepage() {
+  const navigate = useNavigate();
+
+  const doLogin = () => {
+    console.log("Clicked");
+    navigate("/dashboard");
+  };
+
   return (
     <div className="container">
       <div className="leftcontainer">
@@ -24,7 +31,7 @@ function Homepage() {
             <input placeholder="Enter your Password" required type="password" />
           </div>
           <div>
-            <button>Login</button>
+            <button onClick={doLogin}>Login</button>
           </div>
           <div>
             <span style={{ alignSelf: "center" }}>

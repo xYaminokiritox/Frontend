@@ -1,8 +1,9 @@
 import React from "react";
+import "../Asset/css/Register.css";
 
 function Register() {
   return (
-    <div>
+    <div className="maincontainer">
       <div className="formcard">
         <div>
           <h2 style={{ alignSelf: "center" }}>Register</h2>
